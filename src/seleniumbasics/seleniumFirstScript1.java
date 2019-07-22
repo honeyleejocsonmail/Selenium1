@@ -2,14 +2,15 @@ package seleniumbasics;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class seleniumFirstScript1 {
 
 	public static void main(String[] args) throws InterruptedException {
 	
-	System.setProperty("webdriver.gecko.driver", "C:\\driver\\geckodriver-v0.20\\geckodriver.exe");
-	WebDriver driver=new FirefoxDriver();
+	System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
 	driver.get("http://www.facebook.com");
 	driver.manage().window().maximize();
 	Thread.sleep(4000);
